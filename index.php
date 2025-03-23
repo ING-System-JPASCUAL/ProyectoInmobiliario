@@ -1,7 +1,8 @@
+<?php 
+ require_once("config/conexion.php");
+?>
 <!DOCTYPE html>
-
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es-ES" lang="es-ES">
-
 <head >
     <meta charset="utf-8">
     <title>Inmo Experio</title>
@@ -10,17 +11,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
    <!-- font -->
-   <link rel="stylesheet" href="fonts/fonts.css">
+   <link rel="stylesheet" href="assets/fonts/fonts.css">
    <!-- Icons -->
-   <link rel="stylesheet" href="public/fonts/font-icons.css">
-   <link rel="stylesheet" href="public/css/bootstrap.min.css">
-   <link rel="stylesheet" href="public/css/swiper-bundle.min.css">
-   <link rel="stylesheet" href="public/css/animate.css">
-   <link rel="stylesheet"type="text/css" href="public/css/styles.css"/>
+   <link rel="stylesheet" href="assets/fonts/font-icons.css">
+   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+   <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+   <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
+   <link rel="stylesheet" href="assets/css/animate.css">
+   <link rel="stylesheet"type="text/css" href="assets/css/styles.css"/>
 
     <!-- Favicon and Touch Icons  -->
-    <link rel="shortcut icon" href="images/logo/favicon.png">
-<link rel="apple-touch-icon-precomposed" href="images/logo/favicon.png">
+    <link rel="shortcut icon" href="assets/images/logo/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/images/logo/logo_inicio.png">
 
 </head>
 
@@ -32,138 +34,75 @@
 
             <!-- Main Header -->
             <header class="main-header fixed-header">
-                <!-- Header Lower -->
                 <div class="header-lower">
                     <div class="row">                      
                         <div class="col-lg-12">         
-                                <div class="inner-container d-flex justify-content-between align-items-center">
-                                    <!-- Logo Box -->
-                                    <div class="logo-box flex">
-                                        <div class="logo"><a href="index.html"><img src="images/logo/logo@2x.png" alt="logo" width="174" height="44"></a></div>
-                                    </div>
-                                    <div class="nav-outer">
-                                        <!-- Main Menu -->
-                                        <nav class="main-menu show navbar-expand-md">
-                                            <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
-                                                <ul class="navigation clearfix">
-                                                    <li class="dropdown2 home current"><a href="#">Home</a>
-                                                        <ul>
-                                                            <li><a href="index.html">Homepage 01</a></li>
-                                                            <li class="current"><a href="home-02.html">Homepage 02</a></li>
-                                                            <li><a href="home-03.html">Homepage 03</a></li>
-                                                            <li><a href="home-04.html">Homepage 04</a></li>
-                                                            <li><a href="home-05.html">Homepage 05</a></li>
-                                                            <li><a href="home-06.html">Homepage 06</a></li>
-
-                                                        </ul>
-                                                    </li>
-                                                    <li class="dropdown2"><a href="#">Listing</a>
-                                                        <ul>
-                                                            <li><a href="property-halfmap-grid.html">Property Half Map Grid</a></li>
-                                                            <li><a href="property-halfmap-list.html">Property Half Map List</a></li>
-                                                            <li><a href="topmap-grid.html">Find Topmap Grid</a></li>
-                                                            <li><a href="topmap-list.html">Find Topmap List</a></li>
-                                                            <li><a href="sidebar-grid.html">Find Sidebar Grid</a></li>
-                                                            <li><a href="sidebar-list.html">Find Sidebar List</a></li>
-
-                                                        </ul>
-                                                    </li>
-                                                    <li class="dropdown2"><a href="#">Properties</a>
-                                                        <ul>
-                                                            <li><a href="property-details-v1.html">Property Details 1</a></li>
-                                                            <li><a href="property-details-v2.html">Property Details 2</a></li>
-                                                            <li><a href="property-details-v3.html">Property Details 3</a></li>
-                                                            <li><a href="property-details-v4.html">Property Details 4</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class="dropdown2"><a href="#">Pages</a>
-                                                        <ul>
-                                                            <li><a href="about-us.html">About Us</a></li>
-                                                            <li><a href="our-service.html">Our Services</a></li>
-                                                            <li><a href="pricing.html">Pricing</a></li>
-                                                            <li><a href="contact.html">Contact Us</a></li>
-                                                            <li><a href="faq.html">FAQs</a></li>
-                                                            <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                                                            <li><a href="icon.html">Icons</a></li>
-
-                                                        </ul>
-                                                    </li>
-                                                    <li class="dropdown2"><a href="#">Blog</a>
-                                                        <ul>
-                                                            <li><a href="blog.html">Blog Default</a></li>
-                                                            <li><a href="blog-grid.html">Blog Grid</a></li>
-                                                            <li><a href="blog-detail.html">Blog Post Details</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class="dropdown2"><a href="#">Dashboard</a>
-                                                        <ul>
-                                                            <li><a href="dashboard.html">Dashboard</a></li>
-                                                            <li><a href="my-favorites.html">My Properties</a></li>
-                                                            <li><a href="my-invoices.html">My Invoices</a></li>
-                                                            <li><a href="my-favorites.html">My Favorites</a></li>
-                                                            <li><a href="reviews.html">Reviews</a></li>
-                                                            <li><a href="my-profile.html">My Profile</a></li>
-                                                            <li><a href="add-property.html">Add Property</a></li>
-                                                        </ul>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </nav>
-                                        <!-- Main Menu End-->
-                                    </div>
-                                    <div class="header-account">
-                                        <div class="register">
-                                            <ul class="d-flex">
-                                                <li><a href="#modalLogin" data-bs-toggle="modal">Login</a></li>
-                                                <li>/</li>
-                                                <li><a href="#modalRegister" data-bs-toggle="modal">Register</a></li>
+                            <div class="inner-container d-flex justify-content-between align-items-center">
+                                <!-- Logo Box -->
+                                <div class="logo-box flex">
+                                    <div class="logo"><a href="index.html"><img src="assets/images/logo/logo_titulo.png" alt="logo" width="174" height="44"></a></div>
+                                </div>
+                                <div class="nav-outer">
+                                    <!-- Main Menu -->
+                                    <nav class="main-menu show navbar-expand-md">
+                                        <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
+                                            <ul class="navigation clearfix">
+                                                <li class="dropdown2 home current"><a href="#">Sitio</a>
+                                                    <ul>
+                                                        <li><a href="index.html">Homepage 01</a></li>
+                                                        <li class="current"><a href="home-02.html">Homepage 02</a></li>
+                                                        <li><a href="home-03.html">Homepage 03</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="dropdown2"><a href="#">Departamento</a>
+                                                    <ul>
+                                                        <li><a href="property-halfmap-grid.html">Property Half Map Grid</a></li>
+                                                        <li><a href="property-halfmap-list.html">Property Half Map List</a></li>
+                                                    </ul>
+                                                </li>
                                             </ul>
                                         </div>
-                                        <div class="flat-bt-top">
-                                            <a class="tf-btn primary" href="add-property.html">Submit Property</a>
-                                        </div>  
-                                    </div>
-                                    
-                                    <div class="mobile-nav-toggler mobile-button"><span></span></div>
-                                    
+                                    </nav>
+                                    <!-- Main Menu End-->
                                 </div>
+                                <div class="header-account">
+                                    <div class="register">
+                                        <?php 
+                                            if(isset($_SESSION["usu_id"])){
+                                                echo 
+                                                    '<a href="#" class="box-avatar dropdown-toggle" data-bs-toggle="dropdown">'.
+                                                        '<div class="avatar avt-40 round">'.
+                                                            '<img src="'. $_SESSION["usu_img"] .'" alt="avt">'.
+                                                        '</div>'.
+                                                        '<p class="name">'. $_SESSION["usu_nom"] .'<span class="icon icon-arr-down"></span></p>'.
+                                                        '<p class="name">'.'<strong>DNI: </strong>'. $_SESSION["usu_dni"] . '</p>'.
+                                                        '<div class="dropdown-menu">'.
+                                                            '<a class="dropdown-item" href="my-favorites.html">Mis avisos</a>'.
+                                                            '<a class="dropdown-item" href="my-invoices.html">Interesados</a>'.
+                                                            '<a class="dropdown-item" href="my-favorites.html">Mi Actividad</a>'.
+                                                            '<a class="dropdown-item" href="usereditprofile.php">Cuenta</a>'.
+                                                            '<a class="dropdown-item" href="my-profile.html">Ayuda</a>'.
+                                                            '<a class="dropdown-item" href="view/addPropiedad/addpropiedad.php">Subir Propiedad</a>'.
+                                                            '<a class="dropdown-item" href="view/components/logout.php">Cerrar Sesión</a>'.
+                                                        '</div>'.
+                                                    '</a>';
+                                            }else{
+                                                echo
+                                                '<ul class="d-flex">
+                                                    <li><a href="#modalLogin" data-bs-toggle="modal">Acceder</a></li>
+                                                    '.'<li>/</li>'.'
+                                                    <li><a href="#modalRegister" data-bs-toggle="modal">Registrarse</a></li>
+                                                </ul>';
+                                            }
+                                        ?>
+                                    </div>
+                                </div>
+                                <div class="mobile-nav-toggler mobile-button"><span></span></div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <!-- End Header Lower -->
-            
-                <!-- Mobile Menu  -->
-                <div class="close-btn"><span class="icon flaticon-cancel-1"></span></div>    
-                <div class="mobile-menu">
-                    <div class="menu-backdrop"></div>                            
-                    <nav class="menu-box">
-                        <div class="nav-logo"><a href="index.html"><img src="images/logo/logo@2x.png" alt="nav-logo" width="174" height="44"></a></div>
-                        <div class="bottom-canvas">
-                            <div class="login-box">
-                                <a href="#modalLogin" data-bs-toggle="modal">Login</a>
-                                <span>/</span>
-                                <a href="#modalRegister" data-bs-toggle="modal">Register</a>
-                            </div>
-                            <div class="menu-outer"></div>
-                            <div class="button-mobi-sell">
-                                <a class="tf-btn primary" href="add-property.html">Submit Property</a>
-                            </div> 
-                            <div class="mobi-icon-box">
-                                <div class="box d-flex align-items-center">
-                                    <span class="icon icon-phone2"></span>
-                                    <div>1-333-345-6868</div>
-                                </div>
-                                <div class="box d-flex align-items-center">
-                                    <span class="icon icon-mail"></span>
-                                    <div>themesflat@gmail.com</div>
-                                </div>
-                            </div>
-                        </div>
-                    </nav>                
-                </div>
-                <!-- End Mobile Menu -->
-            
-            </header>
+            </header>       
             <!-- End Main Header -->
             <!-- Slider -->
             <section class="flat-slider home-2">
@@ -172,22 +111,22 @@
                         <div class="col-xl-10">
                             <div class="slider-content">
                                 <div class="heading">
-                                    <h2 class="title wow fadeIn animationtext clip" data-wow-delay=".2s" data-wow-duration="2000ms">Find A Home That Fits
+                                    <h2 class="title wow fadeIn animationtext clip" data-wow-delay=".2s" data-wow-duration="2000ms">Encuentra un hogar que se ajuste a tus sueños
                                         <br>
                                         <span class="tf-text s1 cd-words-wrapper"> 
-                                            <span class="item-text is-visible">Perfectly</span>
-                                            <span class="item-text is-hidden">Dream Home</span>
+                                            <span class="item-text is-visible">Perfectamente</span>
+                                            <span class="item-text is-hidden">Hogar de ensueño</span>
                                         </span> 
                                     </h2>
-                                    <p class="subtitle body-1 wow fadeIn" data-wow-delay=".8s" data-wow-duration="2000ms">We are a real estate agency that will help you find the best residence you dream of.</p>
+                                    <p class="subtitle body-1 wow fadeIn" data-wow-delay=".8s" data-wow-duration="2000ms">Somos una agencia inmobiliaria que te ayudará a encontrar la mejor residencia con la que sueñas.</p>
                                 </div>
                                 <div class="flat-tab flat-tab-form">
                                     <ul class="nav-tab-form style-2" role="tablist">
                                         <li class="nav-tab-item" role="presentation">   
-                                            <a href="#forRent" class="nav-link-item active"  data-bs-toggle="tab">For Rent</a>
+                                            <a href="#forRent" class="nav-link-item active"  data-bs-toggle="tab">Alquilar</a>
                                         </li>
                                         <li class="nav-tab-item" role="presentation">
-                                            <a href="#forSale" class="nav-link-item" data-bs-toggle="tab">For Sale</a>
+                                            <a href="#forSale" class="nav-link-item" data-bs-toggle="tab">Comprar</a>
                                         </li>
                                     </ul>
                                     <div class="tab-content">
@@ -197,18 +136,18 @@
                                                     <div class="wd-find-select style-2 shadow-st no-left-round">
                                                         <div class="inner-group">
                                                             <div class="form-group-1 search-form form-style">
-                                                                <label>Keyword</label>
+                                                                <label>Palabra clave</label>
                                                                 <input type="text" class="form-control" placeholder="Search Keyword." value="" name="s" title="Search for" required="">
                                                             </div>
                                                             <div class="form-group-2 form-style">
-                                                                <label>Location</label>
+                                                                <label>Ubicación</label>
                                                                 <div class="group-ip">
                                                                     <input type="text" class="form-control" placeholder="Search Location" value="" name="s" title="Search for" required="">
                                                                     <a href="#" class="icon icon-location"></a>
                                                                 </div>
                                                             </div>
                                                             <div class="form-group-3 form-style">
-                                                                <label>Type</label>
+                                                                <label>Tipo</label>
                                                                 <div class="group-select">
                                                                     <div class="nice-select" tabindex="0"><span class="current">All</span>
                                                                         <ul class="list">  
@@ -478,29 +417,29 @@
 
                 </div>
                 <div class="img-banner-left">
-                    <img src="images/slider/graplic-slider-2.png" alt="img">
+                    <img src="assets/images/slider/graplic-slider-2.png" alt="img">
                 </div>
                 <div class="img-banner-right">
                     <div class="swiper slider-sw-home2">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="slider-home2 img-animation wow">
-                                    <img src="images/slider/slider-2.jpg" alt="images">
+                                    <img src="assets/images/slider/slider-2.jpg" alt="images">
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="slider-home2">
-                                    <img src="images/slider/slider-2-1.jpg" alt="images">
+                                    <img src="assets/images/slider/slider-2-1.jpg" alt="images">
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="slider-home2">
-                                    <img src="images/slider/slider-2-2.jpg" alt="images">
+                                    <img src="assets/images/slider/slider-2-2.jpg" alt="images">
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="slider-home2">
-                                    <img src="images/slider/slider-2-3.jpg" alt="images">
+                                    <img src="assets/images/slider/slider-2-3.jpg" alt="images">
                                 </div>
                             </div>
                             
@@ -834,249 +773,43 @@
             </section>
             <!-- End Testimonial -->
             <!-- footer -->
-            <footer class="footer">
-                <div class="top-footer">
-                  <div class="container">
-                    <div class="content-footer-top">
-                        <div class="footer-logo">
-                          <img src="images/logo/logo-footer@2x.png" alt="logo-footer" width="174" height="44">
-                        </div>
-                        <div class="wd-social">
-                          <span>Follow Us:</span>
-                          <ul class="list-social d-flex align-items-center">
-                            <li><a href="#" class="box-icon w-40 social"><i class="icon icon-facebook"></i></a></li>
-                            <li><a href="#" class="box-icon w-40 social"><i class="icon icon-linkedin"></i></a></li>
-                            <li><a href="#" class="box-icon w-40 social">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_748_6323)">
-                                    <path d="M9.4893 6.77491L15.3176 0H13.9365L8.87577 5.88256L4.8338 0H0.171875L6.28412 8.89547L0.171875 16H1.55307L6.8973 9.78782L11.1659 16H15.8278L9.48896 6.77491H9.4893ZM7.59756 8.97384L6.97826 8.08805L2.05073 1.03974H4.17217L8.14874 6.72795L8.76804 7.61374L13.9371 15.0075H11.8157L7.59756 8.97418V8.97384Z" fill="white"/>
-                                    </g>
-                                    <defs>
-                                    <clipPath id="clip0_748_6323">
-                                    <rect width="16" height="16" fill="white"/>
-                                    </clipPath>
-                                    </defs>
-                                </svg> 
-                            </a></li>
-                            <li><a href="#" class="box-icon w-40 social"><i class="icon icon-pinterest"></i></a></li>
-                            <li><a href="#" class="box-icon w-40 social"><i class="icon icon-instagram"></i></a></li>
-                            <li><a href="#" class="box-icon w-40 social"><i class="icon icon-youtube"></i></a></li>
-                          </ul>
-                        </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="inner-footer">
-                  <div class="container">
-                    <div class="row">
-                      <div class="col-lg-4 col-md-6">
-                        <div class="footer-cl-1">
-                          
-                          <p class="text-variant-2">Specializes in providing high-class tours for those in need. Contact Us</p>
-                          <ul class="mt-12">
-                            <li class="mt-12 d-flex align-items-center gap-8">
-                                <i class="icon icon-mapPinLine fs-20 text-variant-2"></i>
-                                <p class="text-white">101 E 129th St, East Chicago, IN 46312, US</p>
-                            </li>
-                            <li class="mt-12 d-flex align-items-center gap-8">
-                                <i class="icon icon-phone2 fs-20 text-variant-2"></i>
-                                <a href="tel:1-333-345-6868" class="text-white caption-1">1-333-345-6868</a>
-                            </li>
-                            <li class="mt-12 d-flex align-items-center gap-8">
-                                <i class="icon icon-mail fs-20 text-variant-2"></i>
-                                <p class="text-white">themesflat@gmail.com</p>
-                            </li>
-                          </ul>
-                          
-                        </div>
-                      </div>
-                      <div class="col-lg-2 col-md-6 col-6">
-                        <div class="footer-cl-2">
-                            <div class="fw-7 text-white">Categories</div>
-                            <ul class="mt-10 navigation-menu-footer">
-                                <li> <a href="pricing.html" class="caption-1 text-variant-2">Pricing Plans</a> </li>
-
-                                <li> <a href="our-service.html" class="caption-1 text-variant-2">Our Services</a> </li>
-
-                                <li> <a href="about-us.html" class="caption-1 text-variant-2">About Us</a> </li>
-
-                                <li> <a href="contact.html" class="caption-1 text-variant-2">Contact Us</a> </li>
-
-                            </ul>
-                        </div>
-                      </div>
-                      <div class="col-lg-2 col-md-4 col-6">
-                        <div class="footer-cl-3">
-                            <div class="fw-7 text-white">Our Company</div>
-                            <ul class="mt-10 navigation-menu-footer">
-                                <li> <a href="topmap-list.html" class="caption-1 text-variant-2">Property For Sale</a> </li>
-
-                                <li> <a href="topmap-grid.html" class="caption-1 text-variant-2">Property For Rent</a> </li>
-                                <li> <a href="topmap-grid.html" class="caption-1 text-variant-2">Property For Buy</a> </li>
-                                <li> <a href="topmap-grid.html" class="caption-1 text-variant-2">Our Agents</a> </li>
-                            </ul>
-                        </div>
-                      </div>
-                      <div class="col-lg-4 col-md-6">
-                        <div class="footer-cl-4">
-                            <div class="fw-7 text-white">
-                                Newsletter
-                            </div>
-                            <p class="mt-12 text-variant-2">Your Weekly/Monthly Dose of Knowledge and Inspiration</p>
-                            <form class="mt-12" id="subscribe-form" action="#" method="post" accept-charset="utf-8" data-mailchimp="true">
-                                <div id="subscribe-content">
-                                    <span class="icon-left icon-mail"></span>
-                                    <input type="email" name="email-form" id="subscribe-email" placeholder="Your email address"/>
-                                    <button type="button" id="subscribe-button" class="button-subscribe"><i class="icon icon-send"></i></button>
-                                </div>
-                                <div id="subscribe-msg"></div>
-                            </form>
-                        </div>
-                      </div>
-                      
-                    </div>
-                  </div>
-                </div>
-                <div class="bottom-footer">
-                  <div class="container">
-                    <div class="content-footer-bottom">
-                        <div class="copyright">©2024 Homzen. All Rights Reserved.</div>
-                          
-                        <ul class="menu-bottom">
-                          <li><a href="our-service.html">Terms Of Services</a> </li>
-
-                          <li><a href="pricing.html">Privacy Policy</a> </li>
-                          <li><a href="contact.html">Cookie Policy</a> </li>
-
-                        </ul>
-                    </div>
-                  </div>
-                </div>
-            </footer>
+    <?php require_once ("view/MainFooter/footer.php") ?>            
             <!-- end footer -->
-            
-
         </div>
         <!-- /#page -->
-
     </div>
-
     <!-- go top -->
     <div class="progress-wrap">
         <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
         <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 286.138;"></path>
         </svg>
     </div>
-
     <!-- popup login -->
-    <div class="modal fade" id="modalLogin">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="flat-account bg-surface">
-                    <h3 class="title text-center">Log In</h3>
-                    <span class="close-modal icon-close2" data-bs-dismiss="modal"></span>
-                    <form action="#">
-                        <fieldset class="box-fieldset">
-                            <label for="name">Your Names<span>*</span>:</label>
-                            <input type="text" class="form-contact style-1" value="themesflat@gmail.com|">
-                        </fieldset>
-                        <fieldset class="box-fieldset">
-                            <label for="pass">Password<span>*</span>:</label>
-                            <div class="box-password">
-                                <input type="password" class="form-contact style-1 password-field" placeholder="Password">
-                                <span class="show-pass">
-                                    <i class="icon-pass icon-eye"></i>
-                                    <i class="icon-pass icon-eye-off"></i>
-                                </span>
-                            </div>
-                        </fieldset>
-                        <div class="d-flex justify-content-between flex-wrap gap-12">
-                            <fieldset class="d-flex align-items-center gap-6">
-                                <input type="checkbox" class="tf-checkbox style-2" id="cb1">
-                                <label for="cb1" class="caption-1 text-variant-1">Remember me</label>
-                            </fieldset>
-                            <a href="#" class="caption-1 text-primary">Forgot password?</a>
-                        </div>
-                        <div class="text-variant-1 auth-line">or sign up with</div>
-                        <div class="login-social">
-                            <a href="#" class="btn-login-social">
-                                <img src="images/logo/fb.jpg" alt="img">
-                                Continue with Facebook
-                            </a>
-                            <a href="#" class="btn-login-social">
-                                <img src="images/logo/google.jpg" alt="img">
-                                Continue with Google
-                            </a>
-                            <a href="#" class="btn-login-social">
-                                <img src="images/logo/tw.jpg" alt="img">
-                                Continue with Twitter
-                            </a>
-                        </div>
-                        <button type="submit" class="tf-btn primary w-100">Login</button>
-                        <div class="mt-12 text-variant-1 text-center noti">Not registered yet?<a href="#modalRegister" data-bs-toggle="modal" class="text-black fw-5">Sign Up</a> </div>
-                    </form>
-                </div>
-            </div> 
-        </div>
-    </div>
+    <?php require_once ("view/AccesoLogin/loginmodal.php") ?>
     <!-- popup register -->
-    <div class="modal fade" id="modalRegister">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="flat-account bg-surface">
-                    <h3 class="title text-center">Register</h3>
-                    <span class="close-modal icon-close2" data-bs-dismiss="modal"></span>
-                    <form action="#">
-                        <fieldset class="box-fieldset">
-                            <label for="name">Username or email address<span>*</span>:</label>
-                            <input type="text" class="form-contact style-1" value="themesflat@gmail.com|">
-                        </fieldset>
-                        <fieldset class="box-fieldset">
-                            <label for="pass">Password<span>*</span>:</label>
-                            <div class="box-password">
-                                <input type="password" class="form-contact style-1 password-field" placeholder="Password">
-                                <span class="show-pass">
-                                    <i class="icon-pass icon-eye"></i>
-                                    <i class="icon-pass icon-eye-off"></i>
-                                </span>
-                            </div>
-                        </fieldset>
-                        <fieldset class="box-fieldset">
-                            <label for="confirm">Confirm Password<span>*</span>:</label>
-                            <div class="box-password">
-                                <input type="password" class="form-contact style-1 password-field2" placeholder="Password">
-                                <span class="show-pass2">
-                                    <i class="icon-pass icon-eye"></i>
-                                    <i class="icon-pass icon-eye-off"></i>
-                                </span>
-                            </div>
-                        </fieldset>
-                        <fieldset class="d-flex align-items-center gap-6">
-                            <input type="checkbox" class="tf-checkbox style-2" id="cb1">
-                            <label for="cb1" class="caption-1 text-variant-1">I agree to the <span class="fw-5 text-black">Terms of User</span></label>
-                        </fieldset>
-                        
-                        <button type="submit" class="tf-btn primary w-100">Register</button>
-                        <div class="mt-12 text-variant-1 text-center noti">Already have an account?<a href="#modalLogin" data-bs-toggle="modal" class="text-black fw-5">Login Here</a> </div>
-                    </form>
-                </div>
-            </div> 
-        </div>
-    </div>
+    <?php require_once ("view/AccesoLogin/registermodal.php") ?>
 
-    <!-- Javascript -->
-    <script type="text/javascript" src="public/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="public/js/jquery.min.js"></script>
-    <script type="text/javascript" src="public/js/swiper-bundle.min.js"></script>
-    <script type="text/javascript" src="public/js/carousel.js"></script>
-    <script type="text/javascript" src="public/js/plugin.js"></script>
-    <script type="text/javascript" src="public/js/jquery.nice-select.min.js"></script>
-    <script type="text/javascript" src="public/js/jquery.nice-select.min.js"></script>
-    <script type="text/javascript" src="public/js/animation_heading.js"></script>
-    <script type="text/javascript" src="public/js/rangle-slider.js"></script>
-    <script type="text/javascript" src="public/js/shortcodes.js"></script>
-    
-    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="assets/js/carousel.js"></script>
+    <script type="text/javascript" src="assets/js/plugin.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.nice-select.min.js"></script>
+    <script type="text/javascript" src="assets/js/tinymce/tinymce.min.js"></script>
+    <script type="text/javascript" src="assets/js/tinymce/tinymce-custom.js"></script>
+    <script type="text/javascript" src="assets/js/shortcodes.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAuSiPhoDaOJ7aqtJVtQhYhLzwwJ7rQlmA"></script>
+    <script src="assets/js/map-single.js"></script>
+    <script src="assets/js/marker.js"></script>
+    <script src="assets/js/infobox.min.js"></script>
+
+    <script type="text/javascript" src="assets/js/animation_heading.js"></script>
+    <script type="text/javascript" src="assets/js/rangle-slider.js"></script>
+    <script type="text/javascript" src="assets/js/shortcodes.js"></script>
+
+    <script type="text/javascript" src="assets/js/main.js"></script>
+
+    <script type="text/javascript" src="index.js"></script>
   
 </body>
 

@@ -1,0 +1,66 @@
+/* nice-select-custom.css */
+
+/* Estilo del contenedor principal nice-select */
+.nice-select-custom {
+    width: 100%; /* Asegura que tome todo el ancho del contenedor */
+    padding: 12px 16px; /* Aumenta el padding interno para mayor altura */
+    font-size: 16px; /* Aumenta el tamaño de la fuente */
+    border-radius: 8px; /* Curvatura para apariencia más elegante */
+    border: 1px solid #e4e4e4; /* Borde ligero */
+    background-color: #fff; /* Fondo blanco */
+    cursor: pointer; /* Cambia el cursor a pointer para indicar que es interactivo */
+  }
+  
+  /* Estilo para el texto de selección actual */
+  .nice-select-custom .current {
+    color: #333; /* Color del texto */
+  }
+  
+  /* Estilo de la lista desplegable */
+  .nice-select-custom .list {
+    max-height: 250px; /* Aumenta la altura máxima de la lista */
+    overflow-y: auto; /* Activa el scroll vertical si hay muchas opciones */
+    background-color: #fff; /* Fondo blanco para las opciones */
+    border: 1px solid #e4e4e4; /* Borde similar al del select */
+    border-radius: 8px; /* Mismo radio de borde que el select */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera para resaltar */
+  }
+  
+  /* Estilos para el scrollbar de la lista */
+  .nice-select-custom .list::-webkit-scrollbar {
+    width: 8px; /* Ancho de la barra de desplazamiento */
+  }
+  
+  .nice-select-custom .list::-webkit-scrollbar-thumb {
+    background-color: #ED2027; /* Color del scroll */
+    border-radius: 5px; /* Curvatura del scroll */
+  }
+  
+  /* Estilo para cada opción de la lista */
+  .nice-select-custom .list .option {
+    padding: 10px 16px; /* Espaciado interno para cada opción */
+    font-size: 15px; /* Tamaño de fuente para opciones */
+    color: #333; /* Color del texto de las opciones */
+    cursor: pointer; /* Cursor de pointer al pasar sobre opciones */
+  }
+  
+  .nice-select-custom .list .option:hover {
+    background-color: #f5f5f5; /* Cambia el fondo al pasar el mouse */
+  }
+  
+  /* Animación para abrir la lista */
+  .nice-select-custom.open .list {
+    opacity: 1;
+    pointer-events: auto;
+    transform: scale(1) translateY(0);
+    width: 100%;
+    transition: all 0.2s ease-in-out; /* Suaviza la transición al abrir */
+  }
+  
+  /* Efecto de transición al abrir la lista */
+  .nice-select-custom .list {
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0.95) translateY(-10px); /* Efecto de deslizamiento */
+  }
+  
